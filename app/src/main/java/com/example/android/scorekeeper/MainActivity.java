@@ -7,8 +7,8 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreBuccaneers;
-    int scorePackers;
+    private int scoreBuccaneers;
+    private int scorePackers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,22 +23,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addThreePointsToB(View v) {
-        scoreBuccaneers = scoreBuccaneers + 3;
+        scoreBuccaneers += 3;
         displayBuccaneers(scoreBuccaneers);
     }
 
     public void addTwoPointsToB(View v) {
-        scoreBuccaneers = scoreBuccaneers + 2;
+        scoreBuccaneers += 2;
         displayBuccaneers(scoreBuccaneers);
     }
 
     public void addOnePointToB(View v) {
-        scoreBuccaneers = scoreBuccaneers + 1;
+        scoreBuccaneers += 1;
         displayBuccaneers(scoreBuccaneers);
     }
 
     public void addSixPointsToB(View v) {
-        scoreBuccaneers = scoreBuccaneers + 6;
+        scoreBuccaneers += 6;
         displayBuccaneers(scoreBuccaneers);
     }
 
@@ -50,22 +50,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addThreePointsToP(View v) {
-        scorePackers = scorePackers + 3;
+        scorePackers += 3;
         displayPackers(scorePackers);
     }
 
     public void addTwoPointsToP(View v) {
-        scorePackers = scorePackers + 2;
+        scorePackers += 2;
         displayPackers(scorePackers);
     }
 
     public void addOnePointToP(View v) {
-        scorePackers = scorePackers + 1;
+        scorePackers += 1;
         displayPackers(scorePackers);
     }
 
     public void addSixPointsToP(View v) {
-        scorePackers = scorePackers + 6;
+        scorePackers += 6;
         displayPackers(scorePackers);
     }
 
